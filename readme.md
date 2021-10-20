@@ -9,11 +9,14 @@ Required Python Modules:
 youtube_dl
 selenium
 beautifulsoup4
+PySimpleGUI
 
 How to Run the Project:
 0. Install the dependencies and install all the required python modules.
 1. Clone the repo.
 2. Make sure to download the latest chromedriver.exe and put it in the same folder as the main.py file.
 3. Run main.py.
+4. Enter playlist link. Enter directory. Hit download.
+5. Enjoy your cola!
 
 
