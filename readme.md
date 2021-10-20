@@ -1,5 +1,5 @@
 Project Details:
-
+This project is personal. The motive of this project is to easily download videos from youtube in your preferred format from your favourite playlists. I have always preferred downloading songs from youtube to listen to so I wished to automate the process.
 
 Dependencies:
 python 3.x
