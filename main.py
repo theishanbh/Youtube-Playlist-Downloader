@@ -9,5 +9,5 @@ def main():
         if(event == sg.WIN_CLOSED or event == 'Exit'):
             break
         linkscraper(values['playlistLink'])
-        filedownloader(values['PATH'])
+        filedownloader(values['PATH'], values['format'])
 main()

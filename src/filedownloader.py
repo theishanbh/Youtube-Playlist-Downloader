@@ -3,16 +3,22 @@ import youtube_dl
 import os
 
 
-def filedownloader(save_dir):
-    ydl_opts = {
-        'format': 'bestaudio/best',
-        'outtmpl': save_dir + '/%(title)s.%(ext)s',
-        'postprocessors': [{
-            'key': 'FFmpegExtractAudio',
-            'preferredcodec': 'mp3',
-            'preferredquality': '320',
-        }],
-    }
+def filedownloader(save_dir, format):
+    if(format != 'mp4'):
+        ydl_opts = {
+            'format': 'bestaudio/best',
+            'outtmpl': save_dir + '/%(title)s.%(ext)s',
+            'postprocessors': [{
+                'key': 'FFmpegExtractAudio',
+                'preferredcodec': format,
+                'preferredquality': '320',
+            }],
+        }
+    else:
+        ydl_opts = {
+            'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
+            'outtmpl': save_dir + '/%(title)s.%(ext)s',
+        }
 
     txtfile = open("unabletodownload.txt", "w")
 
