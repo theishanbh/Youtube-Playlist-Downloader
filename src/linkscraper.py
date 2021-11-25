@@ -1,13 +1,6 @@
 from time import sleep
-from selenium.webdriver.common import keys
-
-from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from bs4 import BeautifulSoup as soup
-
 
 def linkscraper(yt_link):
     PATH = "chromedriver.exe"
