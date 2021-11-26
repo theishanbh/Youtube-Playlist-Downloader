@@ -1,5 +1,4 @@
 import PySimpleGUI as sg
-from PySimpleGUI.PySimpleGUI import G, WIN_CLOSED
 sg.theme('DarkBlue3')
 
 availableFormats = ["mp3", "wav","mp4"]
@@ -11,7 +10,7 @@ class GUI:
             [sg.Text('Enter playlist link',size=(10,1)),
              sg.Input('https://www.youtube.com/playlist?list=',size=(68,1),key='playlistLink'),
              sg.Combo(availableFormats,'mp3', size=(8,1), key='format'),
-             sg.Button("Exit",size=(8,1),bind_return_key=True)],
+             sg.Button("Exit",size=(8,1))],
             # second row
             [sg.Text('Root Path',size=(10,1)), 
              sg.Input('C:/',size=(55,1),key='PATH'), 
